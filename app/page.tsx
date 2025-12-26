@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import VerseOfTheDay from './components/VerseOfTheDay';
 import { Book, Zap } from 'lucide-react';
+import Banner from './components/Banner';
 
 interface Book {
   testament: string;
@@ -26,7 +27,7 @@ function getBooks(): Book[] {
 
         for (const file of files) {
           if (file.endsWith('.md')) {
-            const match = file.match(/^(\d+)\s+(.+)\.md$/);
+            const match = file.match(/^([\d.]+)\s+(.+)\.md$/);
             if (match) {
               const [, number, name] = match;
               const urlSafeName = file.replace('.md', '').replace(/\s+/g, '-');
@@ -54,8 +55,9 @@ export default function Home() {
   const newTestament = books.filter(b => b.testament === 'New Testament');
 
   return (
-    <main className="min-h-screen p-4 md:p-8">
-      <div className="max-w-5xl mx-auto">
+    <main className="min-h-screen">
+      <Banner />
+      <div className="max-w-5xl mx-auto p-4 md:p-8">
         <div className="text-center mb-12 md:mb-16">
           <div className="inline-block mb-4">
             <Book className="w-16 h-16 md:w-20 md:h-20 text-amber-700 mx-auto animate-bounce" strokeWidth={1.5} />
@@ -90,11 +92,8 @@ export default function Home() {
                   <li key={book.slug}>
                     <Link
                       href={`/book/${book.slug}`}
-                      className="group flex items-baseline gap-3 hover:bg-amber-50 p-2 -m-2 rounded transition-all duration-200"
+                      className="group block hover:bg-amber-50 p-2 -m-2 rounded transition-all duration-200"
                     >
-                      <span className="text-amber-500 font-bold min-w-[2rem]">
-                        {book.number}.
-                      </span>
                       <span className="text-amber-950 group-hover:text-amber-700 text-lg font-medium">
                         {book.name}
                       </span>
@@ -121,11 +120,8 @@ export default function Home() {
                   <li key={book.slug}>
                     <Link
                       href={`/book/${book.slug}`}
-                      className="group flex items-baseline gap-3 hover:bg-amber-50 p-2 -m-2 rounded transition-all duration-200"
+                      className="group block hover:bg-amber-50 p-2 -m-2 rounded transition-all duration-200"
                     >
-                      <span className="text-amber-500 font-bold min-w-[2rem]">
-                        {book.number}.
-                      </span>
                       <span className="text-amber-950 group-hover:text-amber-700 text-lg font-medium">
                         {book.name}
                       </span>

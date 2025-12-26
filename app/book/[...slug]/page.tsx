@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import BookViewer from './BookViewer';
+import Banner from '@/app/components/Banner';
 
 interface BookPageProps {
   params: Promise<{
@@ -105,8 +106,9 @@ export default async function BookPage({ params }: BookPageProps) {
   }
 
   return (
-    <div className="min-h-screen p-4 md:p-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen">
+      <Banner />
+      <div className="max-w-7xl mx-auto p-4 md:p-8">
         <nav className="mb-6 md:mb-8">
           <Link
             href="/"
