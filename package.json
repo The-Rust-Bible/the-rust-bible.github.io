@@ -3,15 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next build && npx http-server@latest out -p 3000 -g",
-    "build": "next build",
-    "build:analyze": "ANALYZE=true next build",
-    "start": "npx http-server@latest out -p 3000 -g",
+    "prebuild": "node scripts/generate-search-index.js && node scripts/generate-sitemap.js",
+    "dev": "node scripts/generate-search-index.js && next build && npx http-server@14 out -p 3000 -g",
+    "build": "npm run prebuild && next build",
+    "build:analyze": "ANALYZE=true npm run build",
+    "start": "npx http-server@14 out -p 3000 -g",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "clean": "rimraf out .next",
+    "clean": "rimraf out .next public/search-index.json public/sitemap.xml",
     "bundle-size": "node scripts/analyze-bundle.js"
   },
   "dependencies": {

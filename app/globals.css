@@ -6,6 +6,7 @@
   /* Improved typography and readability */
   html {
     scroll-behavior: smooth;
+    color-scheme: light dark;
   }
 
   body {
@@ -16,9 +17,19 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  html.dark body {
+    background: linear-gradient(to bottom, #1e293b, #0f172a);
+    background-attachment: fixed;
+  }
+
   /* Better focus states for accessibility */
   *:focus-visible {
     outline: 2px solid #b45309;
+    outline-offset: 2px;
+  }
+
+  html.dark *:focus-visible {
+    outline: 2px solid #f59e0b;
     outline-offset: 2px;
   }
 
@@ -31,6 +42,10 @@
   ::selection {
     @apply bg-amber-200 text-amber-950;
   }
+
+  html.dark ::selection {
+    @apply bg-amber-700 text-amber-50;
+  }
 }
 
 @layer components {
@@ -39,17 +54,68 @@
     @apply max-w-none;
   }
 
+  html.dark .prose {
+    @apply text-amber-50;
+  }
+
+  html.dark .prose h1 {
+    @apply text-amber-50;
+  }
+
+  html.dark .prose h2,
+  html.dark .prose h3 {
+    @apply text-amber-100;
+  }
+
+  html.dark .prose a {
+    @apply text-amber-400;
+  }
+
   /* Better table styling */
   table {
     @apply border-collapse border-amber-200;
+  }
+
+  html.dark table {
+    @apply border-slate-700;
   }
 
   th, td {
     @apply border border-amber-200 px-3 py-2;
   }
 
+  html.dark th,
+  html.dark td {
+    @apply border-slate-700;
+  }
+
   th {
     @apply bg-amber-100 font-semibold;
+  }
+
+  html.dark th {
+    @apply bg-slate-700 text-amber-50;
+  }
+
+  /* Code block styling */
+  code {
+    @apply rounded px-1.5 py-0.5 text-sm;
+  }
+
+  :not(pre) > code {
+    @apply bg-amber-100 text-amber-900;
+  }
+
+  html.dark :not(pre) > code {
+    @apply bg-slate-700 text-amber-100;
+  }
+
+  pre {
+    @apply bg-amber-950 text-amber-50 p-4 rounded-lg overflow-x-auto;
+  }
+
+  html.dark pre {
+    @apply bg-slate-900 text-amber-50;
   }
 }
 

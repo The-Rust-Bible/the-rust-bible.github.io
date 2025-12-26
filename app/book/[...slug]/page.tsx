@@ -4,6 +4,8 @@ import matter from 'gray-matter';
 import Link from 'next/link';
 import BookViewer from './BookViewer';
 import Banner from '@/app/components/Banner';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { getAllBooksWithNavigation } from '@/app/lib/navigation';
 
 export const dynamic = 'force-static';
 export const dynamicParams = false;
@@ -135,25 +137,38 @@ export default async function BookPage({ params }: BookPageProps) {
     );
   }
 
+  const books = getAllBooksWithNavigation();
+  const breadcrumbItems = [
+    { label: book.testament, href: '/' },
+    { label: book.bookName, href: `/book/${testament}/${bookSlug}/` },
+  ];
+
+  // Find current book and calculate navigation
+  const currentBook = books.find((b) => b.slug === bookSlug && b.testament === book.testament);
+  let previousChapter = null;
+  let nextChapter = null;
+  
+  if (currentBook && currentBook.chapters.length > 0) {
+    // Use first chapter as default for navigation calculation
+    const firstChapterSlug = currentBook.chapters[0].slug;
+    previousChapter = currentBook.chapters[0];
+    nextChapter = currentBook.chapters.length > 1 ? currentBook.chapters[1] : null;
+  }
+
   return (
     <div className="min-h-screen">
       <Banner />
       <div className="max-w-7xl mx-auto p-4 md:p-8">
-        <nav className="mb-6 md:mb-8">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-800 transition-colors font-medium"
-          >
-            <span>←</span>
-            <span>Back to Books</span>
-          </Link>
-        </nav>
+        <Breadcrumbs items={breadcrumbItems} />
 
         <BookViewer
           content={book.content}
           bookName={book.bookName}
           testament={book.testament}
           headings={book.headings}
+          slug={bookSlug}
+          previousChapter={previousChapter}
+          nextChapter={nextChapter}
         />
       </div>
     </div>
