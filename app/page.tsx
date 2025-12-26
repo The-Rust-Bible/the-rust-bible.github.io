@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import Banner from './components/Banner';
 
 interface Book {
   testament: string;
@@ -52,8 +53,9 @@ export default function Home() {
   const newTestament = books.filter(b => b.testament === 'New Testament');
 
   return (
-    <main className="min-h-screen p-4 md:p-8">
-      <div className="max-w-5xl mx-auto">
+    <main className="min-h-screen">
+      <Banner />
+      <div className="max-w-5xl mx-auto p-4 md:p-8">
         <div className="text-center mb-12 md:mb-16">
           <div className="inline-block mb-4">
             <div className="text-6xl md:text-7xl mb-2">📖</div>
