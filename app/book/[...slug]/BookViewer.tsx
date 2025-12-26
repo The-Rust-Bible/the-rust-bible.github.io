@@ -156,12 +156,19 @@ export default function BookViewer({ content, bookName, testament }: BookViewerP
                 p: ({ children }) => {
                   verseCounter++;
                   const verse = verseCounter;
+
+                  // Strip leading numbers from content if present
+                  let content = children;
+                  if (typeof children === 'string') {
+                    content = children.replace(/^\d+\.?\s*/, '');
+                  }
+
                   return (
                     <p className="mb-4 leading-relaxed text-amber-950 text-base md:text-lg flex gap-3">
                       <span className="text-amber-500 font-bold text-sm flex-shrink-0 select-none mt-0.5">
                         {verse}
                       </span>
-                      <span className="flex-1">{children}</span>
+                      <span className="flex-1">{content}</span>
                     </p>
                   );
                 },
