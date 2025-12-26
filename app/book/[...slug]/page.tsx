@@ -5,6 +5,10 @@ import Link from 'next/link';
 import BookViewer from './BookViewer';
 import Banner from '@/app/components/Banner';
 
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+export const revalidate = false;
+
 interface BookPageProps {
   params: Promise<{
     slug: string[];

@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import VerseOfTheDay from './components/VerseOfTheDay';
+import { Book, Zap } from 'lucide-react';
 import Banner from './components/Banner';
+
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+export const revalidate = false;
 
 interface Book {
   testament: string;
@@ -58,7 +64,7 @@ export default function Home() {
       <div className="max-w-5xl mx-auto p-4 md:p-8">
         <div className="text-center mb-12 md:mb-16">
           <div className="inline-block mb-4">
-            <div className="text-6xl md:text-7xl mb-2">📖</div>
+            <Book className="w-16 h-16 md:w-20 md:h-20 text-amber-700 mx-auto animate-bounce" strokeWidth={1.5} />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-3 text-amber-900">
             The Rust Bible
@@ -73,11 +79,13 @@ export default function Home() {
           </div>
         </div>
 
+        <VerseOfTheDay />
+
         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           <section className="bg-white rounded-lg shadow-lg border-2 border-amber-200 overflow-hidden">
             <div className="bg-gradient-to-r from-amber-100 to-amber-50 px-6 py-4 border-b-2 border-amber-300">
               <h2 className="text-2xl md:text-3xl font-bold text-amber-800 flex items-center gap-2">
-                <span className="text-2xl">📜</span>
+                <Book className="w-6 h-6" strokeWidth={2} />
                 Old Testament
               </h2>
               <p className="text-sm text-amber-600 mt-1">The ancient wisdom</p>
@@ -105,7 +113,7 @@ export default function Home() {
           <section className="bg-white rounded-lg shadow-lg border-2 border-amber-200 overflow-hidden">
             <div className="bg-gradient-to-r from-amber-100 to-amber-50 px-6 py-4 border-b-2 border-amber-300">
               <h2 className="text-2xl md:text-3xl font-bold text-amber-800 flex items-center gap-2">
-                <span className="text-2xl">✨</span>
+                <Zap className="w-6 h-6" strokeWidth={2} />
                 New Testament
               </h2>
               <p className="text-sm text-amber-600 mt-1">The modern revelations</p>
