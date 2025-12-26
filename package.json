@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next build && npx serve@latest out -p 3000",
-    "dev:fast": "next dev",
+    "dev": "next build && npx http-server@latest out -p 3000 -g",
+    "dev:watch": "next dev",
     "build": "next build",
-    "start": "npx serve@latest out -p 3000",
+    "start": "npx http-server@latest out -p 3000 -g",
     "lint": "next lint",
     "export": "next build"
   },

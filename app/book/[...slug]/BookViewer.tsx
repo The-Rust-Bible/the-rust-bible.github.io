@@ -1,7 +1,4 @@
-'use client';
-
 import ReactMarkdown from 'react-markdown';
-import { useEffect, useState } from 'react';
 
 interface Heading {
   id: string;
@@ -37,31 +34,7 @@ function slugify(text: string): string {
 }
 
 export default function BookViewer({ content, bookName, testament }: BookViewerProps) {
-  const [headings, setHeadings] = useState<Heading[]>([]);
-  const [activeId, setActiveId] = useState<string>('');
-
-  useEffect(() => {
-    const extracted = extractHeadings(content);
-    setHeadings(extracted);
-  }, [content]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: '-100px 0px -80% 0px' }
-    );
-
-    const headingElements = document.querySelectorAll('h1[id], h2[id], h3[id]');
-    headingElements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
+  const headings = extractHeadings(content);
 
   let verseCounter = 0;
   let currentChapter = '';
@@ -85,11 +58,7 @@ export default function BookViewer({ content, bookName, testament }: BookViewerP
                     : heading.level === 2
                     ? 'pl-4 font-semibold text-amber-800'
                     : 'pl-6 text-amber-700'
-                } ${
-                  activeId === heading.id
-                    ? 'bg-amber-100 text-amber-900'
-                    : 'hover:bg-amber-50'
-                }`}
+                } hover:bg-amber-50`}
               >
                 {heading.text}
               </a>
