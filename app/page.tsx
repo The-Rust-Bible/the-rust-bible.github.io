@@ -2,7 +2,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import VerseOfTheDay from './components/VerseOfTheDay';
-import { Book, Zap } from 'lucide-react';
+import { Book, Zap, GraduationCap } from 'lucide-react';
 import Banner from './components/Banner';
 
 export const dynamic = 'force-static';
@@ -80,6 +80,23 @@ export default function Home() {
         </div>
 
         <VerseOfTheDay />
+
+        <div className="mb-8">
+          <Link
+            href="/sunday-school"
+            className="block bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white rounded-lg shadow-lg border-2 border-amber-700 overflow-hidden transition-all duration-200 transform hover:scale-[1.02]"
+          >
+            <div className="px-6 py-6 md:px-8 md:py-8">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <GraduationCap className="w-8 h-8 md:w-10 md:h-10" strokeWidth={2} />
+                <h2 className="text-2xl md:text-3xl font-bold">Sunday School</h2>
+              </div>
+              <p className="text-center text-amber-50 text-sm md:text-base">
+                Learn the ways of the Rustacean faith through guided lessons
+              </p>
+            </div>
+          </Link>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           <section className="bg-white rounded-lg shadow-lg border-2 border-amber-200 overflow-hidden">
