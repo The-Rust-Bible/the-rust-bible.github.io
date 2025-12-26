@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
+import BookViewer from './BookViewer';
 
 interface BookPageProps {
   params: Promise<{
@@ -105,72 +105,23 @@ export default async function BookPage({ params }: BookPageProps) {
   }
 
   return (
-    <div className="min-h-screen p-8">
-      <div className="max-w-4xl mx-auto">
-        <nav className="mb-8">
+    <div className="min-h-screen p-4 md:p-8">
+      <div className="max-w-7xl mx-auto">
+        <nav className="mb-6 md:mb-8">
           <Link
             href="/"
-            className="text-amber-600 hover:text-amber-800 transition-colors"
+            className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-800 transition-colors font-medium"
           >
-            ← Back to Books
+            <span>←</span>
+            <span>Back to Books</span>
           </Link>
         </nav>
 
-        <div className="bg-white rounded-lg shadow-lg border-2 border-amber-200 overflow-hidden">
-          <div className="bg-amber-100 px-8 py-4 border-b-2 border-amber-300">
-            <div className="text-xs uppercase tracking-wide text-amber-600 font-semibold mb-1">
-              {book.testament}
-            </div>
-            <h1 className="text-3xl font-bold text-amber-900">
-              {book.bookName}
-            </h1>
-          </div>
-
-          <article className="prose prose-lg prose-amber max-w-none p-8 md:p-12">
-            <ReactMarkdown
-              components={{
-                h1: ({ children }) => (
-                  <h1 className="text-4xl font-bold text-amber-900 mb-6 mt-8 first:mt-0 border-b-2 border-amber-200 pb-3">
-                    {children}
-                  </h1>
-                ),
-                h2: ({ children }) => (
-                  <h2 className="text-2xl font-semibold text-amber-800 mb-4 mt-8 flex items-center gap-3">
-                    <span className="text-amber-400">§</span>
-                    {children}
-                  </h2>
-                ),
-                h3: ({ children }) => (
-                  <h3 className="text-xl font-semibold text-amber-700 mb-3 mt-6">
-                    {children}
-                  </h3>
-                ),
-                p: ({ children }) => (
-                  <p className="mb-4 leading-relaxed text-amber-950 text-lg">
-                    {children}
-                  </p>
-                ),
-                blockquote: ({ children }) => (
-                  <blockquote className="border-l-4 border-amber-400 pl-6 py-2 my-6 italic text-amber-800 bg-amber-50">
-                    {children}
-                  </blockquote>
-                ),
-                ul: ({ children }) => (
-                  <ul className="space-y-2 my-4 ml-6">
-                    {children}
-                  </ul>
-                ),
-                li: ({ children }) => (
-                  <li className="text-lg text-amber-950 leading-relaxed">
-                    {children}
-                  </li>
-                ),
-              }}
-            >
-              {book.content}
-            </ReactMarkdown>
-          </article>
-        </div>
+        <BookViewer
+          content={book.content}
+          bookName={book.bookName}
+          testament={book.testament}
+        />
       </div>
     </div>
   );
