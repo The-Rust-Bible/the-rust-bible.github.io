@@ -1,4 +1,8 @@
+'use client';
+
+import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import VerseReference from '@/app/components/VerseReference';
 
 interface Heading {
   id: string;
@@ -10,6 +14,7 @@ interface BookViewerProps {
   content: string;
   bookName: string;
   testament: string;
+  headings: Heading[];
 }
 
 function extractHeadings(markdown: string): Heading[] {
@@ -33,11 +38,10 @@ function slugify(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 }
 
-export default function BookViewer({ content, bookName, testament }: BookViewerProps) {
-  const headings = extractHeadings(content);
+export default function BookViewer({ content, bookName, testament, headings }: BookViewerProps) {
+  const [currentChapter, setCurrentChapter] = useState('');
 
   let verseCounter = 0;
-  let currentChapter = '';
 
   return (
     <div className="flex gap-8 relative">
@@ -83,64 +87,66 @@ export default function BookViewer({ content, bookName, testament }: BookViewerP
             <ReactMarkdown
               components={{
                 h1: ({ children }) => {
-                  const text = String(children);
-                  const id = slugify(text);
-                  verseCounter = 0;
-                  currentChapter = text;
-                  return (
-                    <h1
-                      id={id}
-                      className="text-3xl md:text-4xl font-bold text-amber-900 mb-6 mt-8 first:mt-0 border-b-2 border-amber-200 pb-3 scroll-mt-8"
-                    >
-                      {children}
-                    </h1>
-                  );
-                },
-                h2: ({ children }) => {
-                  const text = String(children);
-                  const id = slugify(text);
-                  verseCounter = 0;
-                  return (
-                    <h2
-                      id={id}
-                      className="text-xl md:text-2xl font-semibold text-amber-800 mb-4 mt-8 flex items-center gap-3 scroll-mt-8"
-                    >
-                      <span className="text-amber-400">§</span>
-                      {children}
-                    </h2>
-                  );
-                },
-                h3: ({ children }) => {
-                  const text = String(children);
-                  const id = slugify(text);
-                  return (
-                    <h3
-                      id={id}
-                      className="text-lg md:text-xl font-semibold text-amber-700 mb-3 mt-6 scroll-mt-8"
-                    >
-                      {children}
-                    </h3>
-                  );
-                },
-                p: ({ children }) => {
-                  verseCounter++;
-                  const verse = verseCounter;
+                   const text = String(children);
+                   const id = slugify(text);
+                   verseCounter = 0;
+                   setCurrentChapter(text);
+                   return (
+                     <h1
+                       id={id}
+                       className="text-3xl md:text-4xl font-bold text-amber-900 mb-6 mt-8 first:mt-0 border-b-2 border-amber-200 pb-3 scroll-mt-8"
+                     >
+                       {children}
+                     </h1>
+                   );
+                 },
+                 h2: ({ children }) => {
+                   const text = String(children);
+                   const id = slugify(text);
+                   verseCounter = 0;
+                   return (
+                     <h2
+                       id={id}
+                       className="text-xl md:text-2xl font-semibold text-amber-800 mb-4 mt-8 flex items-center gap-3 scroll-mt-8"
+                     >
+                       <span className="text-amber-400">§</span>
+                       {children}
+                     </h2>
+                   );
+                 },
+                 h3: ({ children }) => {
+                   const text = String(children);
+                   const id = slugify(text);
+                   return (
+                     <h3
+                       id={id}
+                       className="text-lg md:text-xl font-semibold text-amber-700 mb-3 mt-6 scroll-mt-8"
+                     >
+                       {children}
+                     </h3>
+                   );
+                 },
+                 p: ({ children }) => {
+                   verseCounter++;
+                   const verse = verseCounter;
 
-                  // Strip leading numbers from content if present
-                  let content = children;
-                  if (typeof children === 'string') {
-                    content = children.replace(/^\d+\.?\s*/, '');
-                  }
+                   // Strip leading numbers from content if present
+                   let content = children;
+                   if (typeof children === 'string') {
+                     content = children.replace(/^\d+\.?\s*/, '');
+                   }
 
-                  return (
-                    <p className="mb-4 leading-relaxed text-amber-950 text-base md:text-lg flex gap-3">
-                      <span className="text-amber-500 font-bold text-sm flex-shrink-0 select-none mt-0.5">
-                        {verse}
-                      </span>
-                      <span className="flex-1">{content}</span>
-                    </p>
-                  );
-                },
+                   return (
+                     <p className="mb-4 leading-relaxed text-amber-950 text-base md:text-lg flex gap-3">
+                       <VerseReference 
+                         bookName={bookName} 
+                         chapter={currentChapter} 
+                         verse={verse} 
+                       />
+                       <span className="flex-1">{content}</span>
+                     </p>
+                   );
+                 },
                 blockquote: ({ children }) => (
                   <blockquote className="border-l-4 border-amber-400 pl-6 py-2 my-6 italic text-amber-800 bg-amber-50 ml-6">
                     {children}

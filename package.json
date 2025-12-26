@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "next build && npx http-server@latest out -p 3000 -g",
     "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
     "start": "npx http-server@latest out -p 3000 -g",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "clean": "rimraf out .next"
+    "clean": "rimraf out .next",
+    "bundle-size": "node scripts/analyze-bundle.js"
   },
   "dependencies": {
     "next": "^15.1.0",

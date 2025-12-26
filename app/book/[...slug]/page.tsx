@@ -15,6 +15,31 @@ interface BookPageProps {
   }>;
 }
 
+interface Heading {
+  id: string;
+  text: string;
+  level: number;
+}
+
+function extractHeadings(markdown: string): Heading[] {
+  const headings: Heading[] = [];
+  // Handle both \n and \r\n
+  const lines = markdown.split(/\r?\n/);
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    const match = trimmed.match(/^(#{1,3})\s+(.+)$/);
+    if (match) {
+      const level = match[1].length;
+      const text = match[2];
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      headings.push({ id, text, level });
+    }
+  }
+
+  return headings;
+}
+
 async function getBookContent(testament: string, bookSlug: string) {
   const testamentName = testament === 'old-testament' ? 'Old Testament' : 'New Testament';
   const testamentPath = path.join(process.cwd(), 'public', 'Books', testamentName);
@@ -26,8 +51,8 @@ async function getBookContent(testament: string, bookSlug: string) {
   const files = fs.readdirSync(testamentPath);
   const matchingFile = files.find(file => {
     const fileWithoutExt = file.replace('.md', '');
-    const urlSafeVersion = fileWithoutExt.replace(/\s+/g, '-');
-    return urlSafeVersion === bookSlug;
+    const urlSafeVersion = fileWithoutExt.replace(/\s+/g, '-').toLowerCase();
+    return urlSafeVersion === bookSlug.toLowerCase();
   });
 
   if (!matchingFile) {
@@ -37,12 +62,14 @@ async function getBookContent(testament: string, bookSlug: string) {
   const filePath = path.join(testamentPath, matchingFile);
   const fileContents = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(fileContents);
+  const headings = extractHeadings(content);
 
   return {
     content,
     frontmatter: data,
     testament: testamentName,
     bookName: matchingFile.replace('.md', ''),
+    headings,
   };
 }
 
@@ -57,17 +84,16 @@ function getAllBooks() {
       const testamentPath = path.join(booksDir, testament);
 
       if (fs.existsSync(testamentPath)) {
-        const files = fs.readdirSync(testamentPath);
+        const files = fs.readdirSync(testamentPath)
+          .filter(file => file.endsWith('.md'));
 
         for (const file of files) {
-          if (file.endsWith('.md')) {
-            const fileWithoutExt = file.replace('.md', '');
-            const urlSafeSlug = fileWithoutExt.replace(/\s+/g, '-');
-            books.push({
-              testament,
-              slug: urlSafeSlug,
-            });
-          }
+          const fileWithoutExt = file.replace('.md', '');
+          const urlSafeSlug = fileWithoutExt.replace(/\s+/g, '-').toLowerCase();
+          books.push({
+            testament,
+            slug: urlSafeSlug,
+          });
         }
       }
     }
@@ -127,6 +153,7 @@ export default async function BookPage({ params }: BookPageProps) {
           content={book.content}
           bookName={book.bookName}
           testament={book.testament}
+          headings={book.headings}
         />
       </div>
     </div>

@@ -3,15 +3,75 @@
 @tailwind utilities;
 
 @layer base {
+  /* Improved typography and readability */
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     background: linear-gradient(to bottom, #fef3c7, #fde68a);
     background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Better focus states for accessibility */
+  *:focus-visible {
+    outline: 2px solid #b45309;
+    outline-offset: 2px;
+  }
+
+  /* Improve link readability */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Better text selection */
+  ::selection {
+    @apply bg-amber-200 text-amber-950;
+  }
+}
+
+@layer components {
+  /* Prose enhancements */
+  .prose {
+    @apply max-w-none;
+  }
+
+  /* Better table styling */
+  table {
+    @apply border-collapse border-amber-200;
+  }
+
+  th, td {
+    @apply border border-amber-200 px-3 py-2;
+  }
+
+  th {
+    @apply bg-amber-100 font-semibold;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Reading comfort utility */
+  .reading-width {
+    max-width: 65ch;
+  }
+
+  /* Smooth transitions for interactive elements */
+  .interactive-smooth {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  /* Better mobile optimization */
+  @media (max-width: 640px) {
+    body {
+      font-size: 15px;
+    }
   }
 }

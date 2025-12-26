@@ -2,6 +2,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import VerseOfTheDay from './components/VerseOfTheDay';
+import FooterVerse from './components/FooterVerse';
 import { Book, Zap, GraduationCap } from 'lucide-react';
 import Banner from './components/Banner';
 
@@ -11,7 +12,6 @@ export const revalidate = false;
 
 interface Book {
   testament: string;
-  number: string;
   name: string;
   slug: string;
 }
@@ -27,22 +27,17 @@ function getBooks(): Book[] {
       const testamentPath = path.join(booksDir, testament);
 
       if (fs.existsSync(testamentPath)) {
-        const files = fs.readdirSync(testamentPath);
+        const files = fs.readdirSync(testamentPath)
+          .filter(file => file.endsWith('.md'));
 
         for (const file of files) {
-          if (file.endsWith('.md')) {
-            const match = file.match(/^([\d.]+)\s+(.+)\.md$/);
-            if (match) {
-              const [, number, name] = match;
-              const urlSafeName = file.replace('.md', '').replace(/\s+/g, '-');
-              books.push({
-                testament,
-                number,
-                name,
-                slug: `${testament.toLowerCase().replace(' ', '-')}/${urlSafeName}`,
-              });
-            }
-          }
+          const name = file.replace('.md', '');
+          const urlSafeSlug = name.replace(/\s+/g, '-').toLowerCase();
+          books.push({
+            testament,
+            name,
+            slug: `${testament.toLowerCase().replace(' ', '-')}/${urlSafeSlug}`,
+          });
         }
       }
     }
@@ -157,9 +152,7 @@ export default function Home() {
         </div>
 
         <footer className="mt-12 text-center text-sm text-amber-600">
-          <p className="italic">
-            "Fearless concurrency through the borrow checker, world without data races, Amen."
-          </p>
+          <FooterVerse />
         </footer>
       </div>
     </main>
