@@ -5,6 +5,10 @@ import VerseOfTheDay from './components/VerseOfTheDay';
 import { Book, Zap } from 'lucide-react';
 import Banner from './components/Banner';
 
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+export const revalidate = false;
+
 interface Book {
   testament: string;
   number: string;

@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: process.env.NODE_ENV === 'production' ? '' : '',
+  reactStrictMode: true,
+  // Force all pages to be static
+  trailingSlash: true,
 };
 
 export default nextConfig;
