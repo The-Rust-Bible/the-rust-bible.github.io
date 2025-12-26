@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    background: linear-gradient(to bottom, #fef3c7, #fde68a);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
