@@ -9,8 +9,8 @@ export default function VerseOfTheDay() {
     return null;
   }
 
-  const testamentSlug = verse.testament.toLowerCase().replace(' ', '-');
-  const verseUrl = `/book/${testamentSlug}/${verse.bookSlug}#${verse.chapterSlug}`;
+  const testamentSlug = verse.testament.toLowerCase().replace(/\s+/g, '-');
+  const verseUrl = `/book/${testamentSlug}/${verse.bookSlug}/`;
 
   return (
     <Link href={verseUrl}>
@@ -25,7 +25,7 @@ export default function VerseOfTheDay() {
               "{verse.text}"
             </p>
             <p className="text-xs text-amber-600 mt-2 font-medium">
-              {verse.book} · {verse.chapter}:{verse.verseNumber}
+              {verse.book} {verse.chapterNumber}:{verse.verseNumber}
             </p>
           </div>
         </div>

@@ -2,541 +2,535 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://the-rust-bible.github.io/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/1.0-genesis/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.00-genesis/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/1.1-exodus/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.01-exodus/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/10.1-1-kings/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.02-leviticus/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/11.1-2-kings/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.03-numbers/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/12.1-1-chronicles/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.04-deuteronomy/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/13.1-2-chronicles/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.05-joshua/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/14.1-ezra/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.06-judges/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/15.1-nehemiah/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.07-ruth/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/16.1-esther/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.08-1-samuel/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/17.1-job/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.09-2-samuel/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/18.1-psalms/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.10-1-kings/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/19.1-proverbs/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.11-2-kings/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/2.1-leviticus/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.12-1-chronicles/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/20.1-ecclesiastes/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.13-2-chronicles/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/21.1-song-of-solomon/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.14-ezra/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/22.1-isaiah/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.15-nehemiah/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/23.1-jeremiah/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.16-esther/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/24.1-lamentations/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.17-job/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/25.1-ezekiel/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.18-psalms/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/26.1-daniel/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.19-proverbs/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/27.1-hosea/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.20-ecclesiastes/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/28.1-joel/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.21-song-of-solomon/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/29.1-amos/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.22-isaiah/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/3.1-numbers/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.23-jeremiah/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/30.1-obadiah/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.24-lamentations/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/31.1-jonah/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.25-ezekiel/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/32.1-micah/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.26-daniel/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/33.1-nahum/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.27-hosea/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/34.1-habakkuk/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.28-joel/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/35.1-zephaniah/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.29-amos/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/36.1-haggai/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.30-obadiah/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/37.1-zechariah/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.31-jonah/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/38.1-malachi/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.32-micah/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/4.1-deuteronomy/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.33-nahum/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/5.1-joshua/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.34-habakkuk/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/6.1-judges/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.35-zephaniah/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/7.1-ruth/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.36-haggai/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/8.1-1-samuel/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.37-zechariah/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/9.1-2-samuel/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/old-testament/1.38-malachi/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/old-testament/zz_genesis/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.00-matthew/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/1.0-matthew/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.01-mark/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/10.0-ephesians/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.02-luke/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/11.0-philippians/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.03-john/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/12.0-colossians/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.04-acts/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/13.0-1-thessalonians/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.05-romans/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/14.0-2-thessalonians/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.06-1-corinthians/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/15.0-1-timothy/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.07-2-corinthians/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/16.0-2-timothy/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.08-galatians/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/17.0-titus/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.09-ephesians/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/18.0-philemon/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.10-philippians/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/19.0-hebrews/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.11-colossians/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/2.0-mark/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.12-1-thessalonians/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/20.0-james/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.13-2-thessalonians/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/21.0-1-peter/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.14-1-timothy/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/22.0-2-peter/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.15-2-timothy/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/23.0-1-john/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.16-titus/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/24.0-2-john/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.17-philemon/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/25.0-3-john/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.18-hebrews/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/26.0-jude/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.19-james/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/27.0-revelation/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.20-1-peter/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/3.0-luke/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.21-2-peter/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/4.0-john/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.22-1-john/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/5.0-acts/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.23-2-john/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/6.0-romans/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.24-3-john/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/7.0-1-corinthians/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.25-jude/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/8.0-2-corinthians/</loc>
-    <lastmod>2025-12-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://the-rust-bible.github.io/book/new-testament/9.0-galatians/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <loc>https://the-rust-bible.github.io/book/new-testament/2.26-revelation/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/advanced-rust/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/advanced-rust/async-and-await/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/advanced-rust/concurrency-and-threads/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/advanced-rust/macros/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/advanced-rust/unsafe-rust/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/intermediate-rust/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/intermediate-rust/closures-and-higher-order-functions/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/intermediate-rust/collections/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/intermediate-rust/error-handling/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/intermediate-rust/lifetimes/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/intermediate-rust/smart-pointers/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/intermediate-rust/structs-and-enums/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/intermediate-rust/traits/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/introduction-to-rust/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/introduction-to-rust/control-flow/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/introduction-to-rust/functions/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/introduction-to-rust/getting-started/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/introduction-to-rust/modules-and-packages/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/introduction-to-rust/ownership-and-borrowing/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/introduction-to-rust/pattern-matching/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://the-rust-bible.github.io/sunday-school/introduction-to-rust/variables-and-data-types/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
