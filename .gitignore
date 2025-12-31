@@ -37,3 +37,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.gitignore
+bible.csv
+bible.py
+COMPLETION_PROGRESS.md
